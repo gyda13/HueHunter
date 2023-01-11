@@ -12,34 +12,10 @@ import SwiftUI
 
 struct ParticelsView: View {
    
-    var items: [EmitterConfig] = [
-        EmitterConfig(emitter: Emitters.red,
-                      size: CGSize(width: Constants.width, height: 1),
-                      shape: .line,
-                      position: CGPoint(x: Constants.width / 2, y: 0)),
-        EmitterConfig(emitter: Emitters.green,
-                      size: CGSize(width: Constants.width, height: 1),
-                      shape: .line,
-                      position: CGPoint(x: Constants.width / 4, y: 10)),
-        EmitterConfig(emitter: Emitters.blue,
-                      size: CGSize(width: Constants.width, height: 1),
-                      shape: .line,
-                      position: CGPoint(x: Constants.width / 6, y: 20)),
-        EmitterConfig(emitter: Emitters.yellow,
-                      size: CGSize(width: Constants.width, height: 1),
-                      shape: .line,
-                      position: CGPoint(x: Constants.width / 8, y: 30)),
-        EmitterConfig(emitter: Emitters.orange,
-                      size: CGSize(width: Constants.width, height: 1),
-                      shape: .line,
-                      position: CGPoint(x: Constants.width / 10, y: 40)),
-    ]
+   
     var body: some View {
         
-        ZStack{
-           
-            
-            
+        ZStack{  
             ForEach(items) { item in
                 EmitterItem(config: item)
                     .listRowBackground(Color(red: 0.1, green: 0.1, blue: 0.1))

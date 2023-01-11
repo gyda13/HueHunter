@@ -8,75 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Emitters {
-    static let red = ParticlesEmitter {
-        EmitterCell()
-            .content(.circle(8.0))
-            .color(.red)
-            .lifetime(10)
-            .birthRate(30)
-            .scale(0.1)
-            .scaleRange(0.08)
-            .velocity(100)
-            .velocityRange(50)
-            .yAcceleration(200.0)
-            .emissionLongitude(.pi)
-    }
-    
-    static let blue = ParticlesEmitter {
-        EmitterCell()
-            .content(.circle(8.0))
-            .color(.blue)
-            .lifetime(10)
-            .birthRate(30)
-            .scale(0.1)
-            .scaleRange(0.08)
-            .velocity(100)
-            .velocityRange(50)
-            .yAcceleration(200.0)
-            .emissionLongitude(.pi)
-    }
-    
-    static let green = ParticlesEmitter {
-        EmitterCell()
-            .content(.circle(8.0))
-            .color(.green)
-            .lifetime(10)
-            .birthRate(30)
-            .scale(0.1)
-            .scaleRange(0.08)
-            .velocity(100)
-            .velocityRange(50)
-            .yAcceleration(200.0)
-            .emissionLongitude(.pi)
-    }
-    static let yellow = ParticlesEmitter {
-        EmitterCell()
-            .content(.circle(8.0))
-            .color(.yellow)
-            .lifetime(10)
-            .birthRate(30)
-            .scale(0.1)
-            .scaleRange(0.08)
-            .velocity(100)
-            .velocityRange(50)
-            .yAcceleration(200.0)
-            .emissionLongitude(.pi)
-    }
-    static let orange = ParticlesEmitter {
-        EmitterCell()
-            .content(.circle(8.0))
-            .color(.orange)
-            .lifetime(10)
-            .birthRate(30)
-            .scale(0.1)
-            .scaleRange(0.08)
-            .velocity(100)
-            .velocityRange(20)
-            .yAcceleration(200.0)
-            .emissionLongitude(.pi)
-    }
-}
+
 
 struct Constants {
     static let height: CGFloat = 230.0
@@ -91,3 +23,4 @@ struct EmitterConfig: Identifiable {
     // To make the ForEach work
     let id = UUID()
 }
+

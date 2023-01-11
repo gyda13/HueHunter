@@ -205,6 +205,7 @@ extension EmitterCell {
     }
 }
 
+
 fileprivate extension EmitterCell.Content {
     var image: UIImage {
         switch self {
@@ -218,5 +219,98 @@ fileprivate extension EmitterCell.Content {
                 context.cgContext.fillPath()
             }
         }
+    }
+}
+
+let items: [EmitterConfig] = [
+    EmitterConfig(emitter: Emitters.red,
+                  size: CGSize(width: Constants.width, height: 1),
+                  shape: .line,
+                  position: CGPoint(x: Constants.width / 2, y: 0)),
+    EmitterConfig(emitter: Emitters.green,
+                  size: CGSize(width: Constants.width, height: 1),
+                  shape: .line,
+                  position: CGPoint(x: Constants.width / 4, y: 10)),
+    EmitterConfig(emitter: Emitters.blue,
+                  size: CGSize(width: Constants.width, height: 1),
+                  shape: .line,
+                  position: CGPoint(x: Constants.width / 6, y: 20)),
+    EmitterConfig(emitter: Emitters.yellow,
+                  size: CGSize(width: Constants.width, height: 1),
+                  shape: .line,
+                  position: CGPoint(x: Constants.width / 8, y: 30)),
+    EmitterConfig(emitter: Emitters.orange,
+                  size: CGSize(width: Constants.width, height: 1),
+                  shape: .line,
+                  position: CGPoint(x: Constants.width / 10, y: 40)),
+]
+
+struct Emitters {
+    static let red = ParticlesEmitter {
+        EmitterCell()
+            .content(.circle(8.0))
+            .color(.red)
+            .lifetime(10)
+            .birthRate(30)
+            .scale(0.1)
+            .scaleRange(0.08)
+            .velocity(100)
+            .velocityRange(50)
+            .yAcceleration(200.0)
+            .emissionLongitude(.pi)
+    }
+    
+    static let blue = ParticlesEmitter {
+        EmitterCell()
+            .content(.circle(8.0))
+            .color(.blue)
+            .lifetime(10)
+            .birthRate(30)
+            .scale(0.1)
+            .scaleRange(0.08)
+            .velocity(100)
+            .velocityRange(50)
+            .yAcceleration(200.0)
+            .emissionLongitude(.pi)
+    }
+    
+    static let green = ParticlesEmitter {
+        EmitterCell()
+            .content(.circle(8.0))
+            .color(.green)
+            .lifetime(10)
+            .birthRate(30)
+            .scale(0.1)
+            .scaleRange(0.08)
+            .velocity(100)
+            .velocityRange(50)
+            .yAcceleration(200.0)
+            .emissionLongitude(.pi)
+    }
+    static let yellow = ParticlesEmitter {
+        EmitterCell()
+            .content(.circle(8.0))
+            .color(.yellow)
+            .lifetime(10)
+            .birthRate(30)
+            .scale(0.1)
+            .scaleRange(0.08)
+            .velocity(100)
+            .velocityRange(50)
+            .yAcceleration(200.0)
+            .emissionLongitude(.pi)
+    }
+    static let orange = ParticlesEmitter {
+        EmitterCell()
+            .content(.circle(8.0))
+            .color(.orange)
+            .lifetime(10)
+            .birthRate(30)
+            .scale(0.1)
+            .scaleRange(0.08)
+            .velocity(100)
+            .velocityRange(20)
+            .yAcceleration(200.0)
+            .emissionLongitude(.pi)
     }
 }

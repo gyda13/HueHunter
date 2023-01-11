@@ -7,7 +7,7 @@ learn about an object's color by classifying the object's color in a fun way.
 - SwiftUI </br>
 - Accessibility </br>
 
-## Localization
+## Languages supported
 - English </br>
 - العربية </br>
 

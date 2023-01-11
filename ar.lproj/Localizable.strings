@@ -1,0 +1,39 @@
+/*
+  Localizable.strings
+  HueHunter
+
+  Created by gyda almohaimeed on 16/06/1444 AH.
+  
+*/
+
+
+
+"Hue Hunter"="مصدادو الألوان";
+
+
+ "welcome"="مرحبا";
+ 
+"lets play again"="لنلعب مرة اخرى";
+
+"Welecom to Hue Hunter where you can classifay colors with objects ..🤩 \n If you have vision disabilities please enbel the image descriptions in the VoiceOver seetings. \n Seetings > Accessibility > VoiceOver > VoiceOver recognition > image descriptions - on -"="مرحبًا بك في مصدادو الألوان حيث يمكنك تصنيف الألوان بإستخدام الكائنات .. 🤩 \n إذا كنت تعاني من إعاقات في الرؤية ، فيرجى تضمين أوصاف الصورة في التعليق الصوتي. الضبط> تسهيلات الاستخدام> التعليق الصوتي> التعرف باستخدام التعليق الصوتي> أوصاف الصور - تشغيل - \n";
+
+"Learn colors with fun"="تعلّم الألوان بمرح";
+
+"Drag the color below and drop it into the object that matches this color"="اسحب اللون اللذي في الاسفل وأسقطه في الكائن المطابق لهذا اللون";
+
+"You won!🥳"="لقد ربحت!🥳";
+
+"score:"="النتيجة:";
+
+
+"OK"="موافق";
+
+"Red"="أحمر";
+"Blue"="أزرق";
+"Green"="أخضر";
+"Yellow"="أصفر";
+"Gray"="رصاصي";
+"Purple"="بنفسجي";
+"White"="أبيض";
+"Orange"="برتقالي";
+"Brown"="بني";

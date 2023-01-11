@@ -1,0 +1,38 @@
+/* 
+  Localizable.strings
+  HueHunter
+
+  Created by gyda almohaimeed on 16/06/1444 AH.
+  
+*/
+
+"Hue Hunter"="Hue Hunter";
+
+  "welcome"="welecome";
+
+
+
+"lets play again"="lets play again";
+"Welecom to Hue Hunter where you can classifay colors with objects ..🤩 \n If you have vision disabilities please enbel the image descriptions in the VoiceOver seetings.\n Seetings > Accessibility > VoiceOver > VoiceOver recognition > image descriptions - on -"="Welecom to Hue Hunter where you can classifay colors with objects ..🤩 \n If you have vision disabilities please enbel the image descriptions in the VoiceOver seetings. \n Seetings > Accessibility > VoiceOver > VoiceOver recognition > image descriptions - on -";
+
+
+"Learn colors with fun"="Learn colors with fun";
+
+"Drag the color below and drop it into the object that matches this color"="Drag the color below and drop it into the object that matches this color";
+
+"score:"="score:";
+"You won!🥳"="You won!🥳";
+
+
+
+"OK"="OK";
+
+"Red"="Red";
+"Blue"="Blue";
+"Green"="Green";
+"Yellow"="Yellow";
+"Gray"="Gray";
+"Purple"="Purple";
+"White"="White";
+"Orange"="Orange";
+"Brown"="Brown";

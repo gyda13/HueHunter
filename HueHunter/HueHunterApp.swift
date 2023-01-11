@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct HueHunterApp: App {
+   
     var body: some Scene {
+       
         WindowGroup {
-            ContentView()
+            FirstView()
+              
+            
         }
+        
     }
 }

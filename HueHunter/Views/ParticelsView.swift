@@ -10,7 +10,7 @@ import SwiftUI
 
 
 
-struct SwiftUIView: View {
+struct ParticelsView: View {
    
     var items: [EmitterConfig] = [
         EmitterConfig(emitter: Emitters.red,
@@ -57,9 +57,9 @@ struct SwiftUIView: View {
     }
     
     
-    struct SwiftUIView_Previews: PreviewProvider {
+    struct ParticelsView_Previews: PreviewProvider {
         static var previews: some View {
-            SwiftUIView()
+            ParticelsView()
         }
     }
     

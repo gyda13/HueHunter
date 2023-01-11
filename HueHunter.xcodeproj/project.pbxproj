@@ -14,7 +14,7 @@
 		091CAFCD296C4A68004A4BBD /* ObjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CAFCC296C4A68004A4BBD /* ObjectsView.swift */; };
 		091CAFCF296C4A96004A4BBD /* DraggableColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CAFCE296C4A96004A4BBD /* DraggableColor.swift */; };
 		091CAFD1296C4AAD004A4BBD /* ObjectContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CAFD0296C4AAD004A4BBD /* ObjectContainer.swift */; };
-		09279B85296F303800DE4B1B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09279B84296F303800DE4B1B /* SwiftUIView.swift */; };
+		09279B85296F303800DE4B1B /* ParticelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09279B84296F303800DE4B1B /* ParticelsView.swift */; };
 		09279B87296F30A000DE4B1B /* ParticlesEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09279B86296F30A000DE4B1B /* ParticlesEmitter.swift */; };
 		09279B89296F426100DE4B1B /* Emitters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09279B88296F426100DE4B1B /* Emitters.swift */; };
 		092B3B1E296AE86E001E29F0 /* HueHunterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092B3B1D296AE86E001E29F0 /* HueHunterApp.swift */; };
@@ -31,7 +31,7 @@
 		091CAFCC296C4A68004A4BBD /* ObjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsView.swift; sourceTree = "<group>"; };
 		091CAFCE296C4A96004A4BBD /* DraggableColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableColor.swift; sourceTree = "<group>"; };
 		091CAFD0296C4AAD004A4BBD /* ObjectContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectContainer.swift; sourceTree = "<group>"; };
-		09279B84296F303800DE4B1B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		09279B84296F303800DE4B1B /* ParticelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticelsView.swift; sourceTree = "<group>"; };
 		09279B86296F30A000DE4B1B /* ParticlesEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesEmitter.swift; sourceTree = "<group>"; };
 		09279B88296F426100DE4B1B /* Emitters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitters.swift; sourceTree = "<group>"; };
 		092B3B1A296AE86E001E29F0 /* HueHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HueHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +76,7 @@
 				091CAFCE296C4A96004A4BBD /* DraggableColor.swift */,
 				091CAFD0296C4AAD004A4BBD /* ObjectContainer.swift */,
 				09120409296DAA69002FCB09 /* FirstView.swift */,
-				09279B84296F303800DE4B1B /* SwiftUIView.swift */,
+				09279B84296F303800DE4B1B /* ParticelsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 			files = (
 				0912040A296DAA69002FCB09 /* FirstView.swift in Sources */,
 				091CAFCF296C4A96004A4BBD /* DraggableColor.swift in Sources */,
-				09279B85296F303800DE4B1B /* SwiftUIView.swift in Sources */,
+				09279B85296F303800DE4B1B /* ParticelsView.swift in Sources */,
 				091CAFD1296C4AAD004A4BBD /* ObjectContainer.swift in Sources */,
 				091CAFC9296C49FE004A4BBD /* Object.swift in Sources */,
 				09279B89296F426100DE4B1B /* Emitters.swift in Sources */,

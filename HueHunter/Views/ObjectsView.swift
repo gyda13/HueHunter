@@ -87,7 +87,7 @@ struct  ObjectsView: View {
                 }
             }
             if (viewModel.attempts == 9) {
-                SwiftUIView()
+                ParticelsView()
             }else{
                
             }

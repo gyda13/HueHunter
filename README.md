@@ -1,7 +1,7 @@
 # HueHunter
 Hue Hunter is a learning game that provides a way for children who wants to 
 learn about an object's color by classifying the object's color in a fun way.
-\n The game support children with vision accessibility.
+</br> The game support children with vision accessibility.
 
 ## Technologies
 - SwiftUI </br>

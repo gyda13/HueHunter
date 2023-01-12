@@ -36,7 +36,7 @@ https://user-images.githubusercontent.com/90142160/212078781-9e4a7003-4af6-44a4-
 
 ## Developers
 Gyda - linkedin.com/in/gydam </br>
-Noura - linkedin.com/in/noura-ibn-qurmulah-970546206/
+Noura - [linkedin.com/in/noura-ibn-qurmulah-970546206/](https://www.linkedin.com/in/noura-ibn-qurmulah-970546206/)
 
 ## What is next?
 Providing the game with more levels.

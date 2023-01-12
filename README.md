@@ -35,7 +35,7 @@ We designed this game to be suitable and comfortable for children, as we used a 
 https://user-images.githubusercontent.com/90142160/212078781-9e4a7003-4af6-44a4-9b90-4057a5349c5c.mp4
 
 ## Developers
-Gyda - [linkedin](linkedin.com/in/gydam) </br>
+Gyda - [linkedin](https://www.linkedin.com/in/gydam) </br>
 Noura - [linkedin](https://www.linkedin.com/in/noura-ibn-qurmulah-970546206/)
 
 ## What is next?

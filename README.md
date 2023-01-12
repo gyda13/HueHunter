@@ -12,6 +12,7 @@ learn about an object's color by classifying the object's color in a fun way.
 
 ## Technologies
 - SwiftUI </br>
+- UIKit </br>
 - Accessibility </br>
 
 ## Tools

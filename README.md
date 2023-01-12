@@ -15,12 +15,12 @@ learn about an object's color by classifying the object's color in a fun way.
 - Accessibility </br>
 
 ## Tools
-- Xcode </br>
+- XCode </br>
 - Sketch </br>
 
 ## Languages supported
 - English </br>
-- اللعربية </br>
+- العربية </br>
 
 ## About app design
 We designed this game to be suitable and comfortable for children, as we used a light background to be comfortable and not cause disturbance to children with color blindness. We also used kid-friendly cartoon images to grab their attention. We also have written colors to help people with color blindness to distinguish colors.VoiceOver is supported for the game so children can use in an easy way.

@@ -1,6 +1,6 @@
 # Hue Hunter
 
-##Solution Concept
+## Solution Concept
 Hue Hunter is an educational game app that provides a way for children who wants to </br>
 learn about an object's color by classifying the object's color in a fun way.
 </br>The game support children with vision disabilities.

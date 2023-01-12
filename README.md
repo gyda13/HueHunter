@@ -21,5 +21,5 @@ learn about an object's color by classifying the object's color in a fun way.
 
 
 
-https://user-images.githubusercontent.com/90142160/212078588-85ea7c84-ea6a-44b6-9643-b1d372af29a7.mp4
+https://user-images.githubusercontent.com/90142160/212078781-9e4a7003-4af6-44a4-9b90-4057a5349c5c.mp4
 

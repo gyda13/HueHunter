@@ -35,6 +35,10 @@ We designed this game to be suitable and comfortable for children, as we used a 
 ## Demo
 https://user-images.githubusercontent.com/90142160/212078781-9e4a7003-4af6-44a4-9b90-4057a5349c5c.mp4
 
+## TestFlight
+https://testflight.apple.com/join/NUThfLey
+
+
 ## What is next?
 Providing the game with more levels.
 

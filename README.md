@@ -29,7 +29,8 @@ We designed this game to be suitable and comfortable for children, as we used a 
 
 
 ## Challenge Summary 
-<img width="924" alt="moments" src="https://user-images.githubusercontent.com/90142160/212087259-0c8b2aad-cc44-4cd5-a7f2-16a3b5b7ddbf.png">
+<img width="941" alt="Screen Shot 1444-06-20 at 4 08 40 AM" src="https://user-images.githubusercontent.com/90142160/212213812-cf065fee-8f6c-4136-891c-d35f503a0359.png">
+
 
 
 ## Demo

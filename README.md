@@ -1,7 +1,7 @@
 # Hue Hunter
 Educational Game
 
-## Big idea
+## Big Idea
 Inclusion </br>
 
 ## App Store

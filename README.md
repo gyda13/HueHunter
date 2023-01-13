@@ -24,7 +24,7 @@ learn about an object's color by classifying them in a fun way.
 - العربية </br>
 
 ## About app design
-We designed this game to be suitable and comfortable for children, as we used a light background that not causes disturbance to children with color blindness. We also used kid-friendly cartoon images to grab childrean attention. To help color blindness childrean distinguish between colors we added tha color name for each color. VoiceOver is supported for the game so children can play in an easer.
+We designed this game to be suitable and comfortable for children, as we used a light background that not causes disturbance to children with color blindness. We also used kid-friendly cartoon images to grab childrean attention. To help color blindness childrean distinguish between colors we added the color name for each color. VoiceOver is supported for the game so children can play in an easer.
 
 
 

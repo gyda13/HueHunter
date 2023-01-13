@@ -2,8 +2,11 @@
 Educational Game
 
 ## Big idea
-Inclusion
+Inclusion </br>
+
+## App Store
 https://apps.apple.com/app/hue-hunter/id1664610025
+
 ## What is Hue Hunter?
 Hue Hunter is an educational game app that provides a way for children who wants to </br>
 learn about an object's color by classifying them in a fun way.
@@ -35,9 +38,6 @@ We designed this game to be suitable and comfortable for children, as we used a 
 
 ## Demo
 https://user-images.githubusercontent.com/90142160/212078781-9e4a7003-4af6-44a4-9b90-4057a5349c5c.mp4
-
-## TestFlight
-https://testflight.apple.com/join/NUThfLey
 
 
 ## What is next?

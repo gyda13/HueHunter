@@ -41,7 +41,7 @@ https://testflight.apple.com/join/NUThfLey
 
 
 ## What is next?
-Providing the game with more levels.
+Developing the game and add more levels.
 
 ## Developers
 Gyda - [linkedin](https://www.linkedin.com/in/gydam) </br>

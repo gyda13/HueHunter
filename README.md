@@ -37,10 +37,10 @@ We designed this game to be suitable and comfortable for children, as we used a 
 
 
 ## Demo
-- V-1
+- V-1 </br>
 https://user-images.githubusercontent.com/90142160/212078781-9e4a7003-4af6-44a4-9b90-4057a5349c5c.mp4
 
-- V-2
+- V-2 </br>
 https://user-images.githubusercontent.com/90142160/218288558-d075aad5-b180-441d-8597-d20bdcf086e0.mp4
 
 

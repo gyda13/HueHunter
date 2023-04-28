@@ -7,14 +7,13 @@
 
 import SwiftUI
 
-struct FirstView: View {
+struct SplashScreen: View {
     @State private var isActive = false
     var body: some View {
         ZStack{
             VStack{
                 if isActive {
-                   ObjectsView()
-                    
+                    OnboardingView()
                 }else{
                     Logoanimation()
                     
@@ -31,9 +30,9 @@ struct FirstView: View {
     }
 }
 
-struct FirstView_Previews: PreviewProvider {
+struct SplashScreen_Previews: PreviewProvider {
     static var previews: some View {
-        FirstView()
+        SplashScreen()
     }
 }
 
@@ -48,20 +47,16 @@ struct Logoanimation: View {
         ZStack{
             
             ZStack{
-                Color.accentColor
+                Color("backgroundColor")
                     .ignoresSafeArea()
                 
                 VStack(spacing: -70){
              
                         Image("LogoImage")
                             .resizable()
-                            .frame(width: 350.0, height: 450.0)
+                            .frame(width: 257.0, height: 170.0)
                           
-                        Text("Learn colors with fun")
-                            .font(.body)
-                            .foregroundColor(Color.green)
-                        
-                   
+
                 }
                 
                 .scaleEffect(size)

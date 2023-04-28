@@ -6,21 +6,80 @@
 //
 
 import SwiftUI
+import AVFoundation
 
-struct  ObjectsView: View {
+struct ObjectsView: View {
+    
+    
+
+    
     @StateObject private var viewModel = GameViewModel()
-    @State var showAlert = false
     let gridItems = [
         GridItem(.flexible()),
         GridItem(.flexible()),
-        GridItem(.flexible()),
+        GridItem(.flexible())
     ]
-    @Environment(\.accessibilityVoiceOverEnabled) var voiceOverEnabled
     
+  
+   var navTitle: String?
+
+    
+   
+    var category: Int = 0
+
+
+    func Title() -> String {
+        var title: String?
+        if viewModel.attempts  == 0 {
+        title = NSLocalizedString("Let's Start!", comment: "")
+        }
+        
+        if viewModel.attempts  == 1 {
+        title  = NSLocalizedString("...🤔", comment: "")
+           
+        }
+        
+        if viewModel.attempts  == 2 {
+        title  = NSLocalizedString("Wonderful!🤩", comment: "")
+        }
+        
+        if viewModel.attempts  == 3 {
+        title  = NSLocalizedString("Keep Going!👏🏻", comment: "")
+        }
+        
+        if viewModel.attempts  == 4 {
+        title = NSLocalizedString("Well done!", comment: "")
+        }
+        
+        if viewModel.attempts  == 5 {
+        title = NSLocalizedString("Great!🤩", comment: "")
+
+        }
+        
+        if viewModel.attempts  == 6 {
+        title = NSLocalizedString("👏🏻👏🏻", comment: "")
+        }
+        
+        if viewModel.attempts  == 7 {
+        title = NSLocalizedString("You're Close!", comment: "")
+        }
+        
+        if viewModel.attempts  == 8 {
+        title = NSLocalizedString("One more left!", comment: "")
+        }
+        
+        if viewModel.attempts  == 9 {
+        title = NSLocalizedString("You Did it!!🥳", comment: "")
+            SoundManager.instance.playSoundWin()
+        }
+        return title ?? ""
+    }
+
     var drag: some Gesture {
         DragGesture()
             .onChanged { state in
                 viewModel.update(dragPosition: state.location)
+               
             }
             .onEnded { state in
                 viewModel.update(dragPosition: state.location)
@@ -30,104 +89,116 @@ struct  ObjectsView: View {
             }
     }
     
-    var body: some View {
+    var body: some View { 
+        
         
         ZStack {
-            Color.accentColor
-                .ignoresSafeArea()
-           
-            ZStack{
+            Color("backgroundColor").ignoresSafeArea()
+          
+                ZStack{
+                    VStack{
                
-                VStack{
-                   
-                    Text("Drag the color below and drop it into the object that matches this color")
-                        .font(.title3)
-                        .multilineTextAlignment(.center)
+                        Text(Title())
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color("AccentColor"))
+                    }.padding(.bottom, 600.0)
+
                     
-                    HStack{
-                        Text(NSLocalizedString("score:", comment: ""))
-                            .font(.title2)
-                            .bold()
-                        
-                        Text("\(viewModel.attempts)")
-                            .font(.title2)
-                            .foregroundColor(Color.red)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        
-                       
-                        
-                    }.padding(8)
-                    Spacer()
                     
-                   
-                }.padding(30)
-                
-               
-                LazyVGrid(columns: gridItems, spacing: 40) {
+                    LazyVGrid(columns: gridItems) {
+                        if self.category == 0 {
+                            
+                            ForEach(viewModel.animalsContainers, id: \.id) { object in
+                                ObjectContainer(
+                                    object: object,
+                                    viewModel: viewModel
+                                )
+                            }
+                        }
+                        if self.category == 1 {
+                            
+                            ForEach(viewModel.natureContainers, id: \.id) { object in
+                                ObjectContainer(
+                                    object: object,
+                                    viewModel: viewModel
+                                )
+                            }
+                            
+                        }
+                        if self.category == 2 {
+                            ForEach(viewModel.FruitsandVegetablesContainers, id: \.id) { object in
+                                ObjectContainer(
+                                    object: object,
+                                    viewModel: viewModel
+                                )
+                            }
+                        }
+                        if self.category == 3 {
+                            ForEach(viewModel.sportsContainers, id: \.id) { object in
+                                ObjectContainer(
+                                    object: object,
+                                    viewModel: viewModel
+                                )
+                            }
+                        }
+                    }.padding()
                     
-                    ForEach(viewModel.toyContainers, id: \.id) { object in
-                        ObjectContainer(
-                            object: object,
-                            viewModel: viewModel
+                    if let currentObject = viewModel.currentToy {
+                        DraggableColor(
+                            color: currentObject,
+                            position: viewModel.currentPosition,
+                            gesture: drag
                         )
+                        .opacity(viewModel.draggableToyOpacity)
                         
                     }
                     
-                }.padding()
-                
-                if let currentObject = viewModel.currentToy {
-                    
-                    DraggableColor(
-                        color: currentObject,
-                        position: viewModel.currentPosition,
-                        gesture: drag
-                        
-                    )
-                    .opacity(viewModel.draggableToyOpacity)
                 }
-            }
-            if (viewModel.attempts == 9) {
-                ParticelsView()
-            }else{
-               
-            }
+                
+                
+                
+                if (viewModel.attempts == 9) {
+                    ParticelsView().navigationBarHidden(true)
+                }
+            
+           
+                
+            
         }
         .onAppear {
             viewModel.setNextToy()
-            showAlert = true      
-        }
-        .alert(
-           
-            Text(NSLocalizedString("lets play again", comment: "")),
-            isPresented: $viewModel.isGameOver,
-         
-            actions: {
-                Button("OK") {
-                    withAnimation {
-                        viewModel.generateNewGame()
-                    }
-                    
-                }
-             
-                
-                
-            },
-            message: {
-              
-            }
-                
-        )
-        .alert(isPresented: $showAlert) {
             
-                            Alert(title: Text("Welecom to Hue Hunter where you can classifay colors with objects ..🤩 \n If you have vision disabilities please enbel the image descriptions in the VoiceOver seetings. \n Seetings > Accessibility > VoiceOver > VoiceOver recognition > image descriptions - on -"))
-                        }
+        }
+    
+        .toolbar{
+         
+            HStack{
+                Image("star")
+                Text(NSLocalizedString("\(viewModel.attempts)/9", comment: ""))
+                
+                    .font(.title)
+                    .bold()
+                    .foregroundColor(Color("starColor"))
+            }.padding(.leading, 200.0 )
+               
         }
         
+       
     }
+       
+}
+
+
     
+    
+
     struct ObjectView_Previews: PreviewProvider {
         static var previews: some View {
             ObjectsView()
+
         }
     }
+
+
 

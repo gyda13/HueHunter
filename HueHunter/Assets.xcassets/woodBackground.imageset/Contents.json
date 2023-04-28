@@ -1,0 +1,42 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "woodBackground.pdf",
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "3x"
+    },
+    {
+      "filename" : "woodBackground~ipad.pdf",
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

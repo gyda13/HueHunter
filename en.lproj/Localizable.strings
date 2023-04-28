@@ -12,16 +12,32 @@
 
 
 
-"lets play again"="lets play again";
-"Welecom to Hue Hunter where you can classifay colors with objects ..🤩 \n If you have vision disabilities please enbel the image descriptions in the VoiceOver seetings.\n Seetings > Accessibility > VoiceOver > VoiceOver recognition > image descriptions - on -"="Welecom to Hue Hunter where you can classifay colors with objects ..🤩 \n If you have vision disabilities please enbel the image descriptions in the VoiceOver seetings. \n Seetings > Accessibility > VoiceOver > VoiceOver recognition > image descriptions - on -";
-
 
 "Learn colors with fun"="Learn colors with fun";
 
 "Drag the color below and drop it into the object that matches this color"="Drag the color below and drop it into the object that matches this color";
 
-"score:"="score:";
-"You won!🥳"="You won!🥳";
+
+"You won!!"="You won!!";
+
+
+"Let's Start!"="Let's Start!";
+"Wonderful!🤩"="Wonderful!🤩";
+"Keep Going!👏🏻"="Keep Going!👏🏻";
+"Well done!"="Well done!";
+"Great!🤩"="Great!🤩";
+"You're Close!"="You're Close!";
+"One more left!"="One more left!";
+"You Did it!!🥳"="You Did it!!🥳";
+
+
+
+
+
+
+
+
+"skip"="skip";
 
 
 
@@ -36,3 +52,20 @@
 "White"="White";
 "Orange"="Orange";
 "Brown"="Brown";
+"Pink"="Pink";
+"Black"="Black";
+
+
+
+
+"Animals" = "Animals";
+"Fruits and Vegetables" = "Fruits and Vegetables" ;
+
+"fruits and vegetables" = "fruits and vegetables" ;
+
+
+"Nature" = "Nature";
+"Sports" = "Sports";
+
+
+"/9" = "/9";

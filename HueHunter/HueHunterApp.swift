@@ -13,7 +13,8 @@ struct HueHunterApp: App {
     var body: some Scene {
        
         WindowGroup {
-            FirstView()
+          
+            SplashScreen()
               
             
         }

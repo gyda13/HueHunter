@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0912040A296DAA69002FCB09 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09120409296DAA69002FCB09 /* FirstView.swift */; };
+		0912040A296DAA69002FCB09 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09120409296DAA69002FCB09 /* SplashScreen.swift */; };
 		091CAFC1296C3137004A4BBD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 091CAFC3296C3137004A4BBD /* Localizable.strings */; };
 		091CAFC9296C49FE004A4BBD /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CAFC8296C49FE004A4BBD /* Object.swift */; };
 		091CAFCB296C4A28004A4BBD /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CAFCA296C4A28004A4BBD /* GameViewModel.swift */; };
@@ -20,10 +20,16 @@
 		092B3B1E296AE86E001E29F0 /* HueHunterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092B3B1D296AE86E001E29F0 /* HueHunterApp.swift */; };
 		092B3B22296AE86F001E29F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 092B3B21296AE86F001E29F0 /* Assets.xcassets */; };
 		092B3B25296AE86F001E29F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 092B3B24296AE86F001E29F0 /* Preview Assets.xcassets */; };
+		094EE96D29896D0800F447B0 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094EE96C29896D0800F447B0 /* Categories.swift */; };
+		094F7981299F1DDA00319D1C /* ResponsiveNavigationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094F7980299F1DDA00319D1C /* ResponsiveNavigationStyle.swift */; };
+		09A1E1A029C6D7E3006FA811 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1E19F29C6D7E3006FA811 /* OnboardingView.swift */; };
+		09AAD35529FBDCD5008591F0 /* match.wav in Resources */ = {isa = PBXBuildFile; fileRef = 09AAD35429FBDCD5008591F0 /* match.wav */; };
+		09AAD35729FBDCEB008591F0 /* fail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09AAD35629FBDCEB008591F0 /* fail.mp3 */; };
+		09AAD35929FBDD27008591F0 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09AAD35829FBDD27008591F0 /* win.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		09120409296DAA69002FCB09 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		09120409296DAA69002FCB09 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		091CAFC2296C3137004A4BBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		091CAFC4296C3144004A4BBD /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		091CAFC8296C49FE004A4BBD /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
@@ -38,6 +44,12 @@
 		092B3B1D296AE86E001E29F0 /* HueHunterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueHunterApp.swift; sourceTree = "<group>"; };
 		092B3B21296AE86F001E29F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		092B3B24296AE86F001E29F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		094EE96C29896D0800F447B0 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		094F7980299F1DDA00319D1C /* ResponsiveNavigationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveNavigationStyle.swift; sourceTree = "<group>"; };
+		09A1E19F29C6D7E3006FA811 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		09AAD35429FBDCD5008591F0 /* match.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = match.wav; sourceTree = "<group>"; };
+		09AAD35629FBDCEB008591F0 /* fail.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fail.mp3; sourceTree = "<group>"; };
+		09AAD35829FBDD27008591F0 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +87,11 @@
 				091CAFCC296C4A68004A4BBD /* ObjectsView.swift */,
 				091CAFCE296C4A96004A4BBD /* DraggableColor.swift */,
 				091CAFD0296C4AAD004A4BBD /* ObjectContainer.swift */,
-				09120409296DAA69002FCB09 /* FirstView.swift */,
+				09120409296DAA69002FCB09 /* SplashScreen.swift */,
 				09279B84296F303800DE4B1B /* ParticelsView.swift */,
+				094EE96C29896D0800F447B0 /* Categories.swift */,
+				094F7980299F1DDA00319D1C /* ResponsiveNavigationStyle.swift */,
+				09A1E19F29C6D7E3006FA811 /* OnboardingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -84,6 +99,7 @@
 		092B3B11296AE86E001E29F0 = {
 			isa = PBXGroup;
 			children = (
+				09AAD35329FBDCA0008591F0 /* sound */,
 				091CAFC3296C3137004A4BBD /* Localizable.strings */,
 				092B3B1C296AE86E001E29F0 /* HueHunter */,
 				092B3B1B296AE86E001E29F0 /* Products */,
@@ -117,6 +133,16 @@
 				092B3B24296AE86F001E29F0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09AAD35329FBDCA0008591F0 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				09AAD35829FBDD27008591F0 /* win.mp3 */,
+				09AAD35629FBDCEB008591F0 /* fail.mp3 */,
+				09AAD35429FBDCD5008591F0 /* match.wav */,
+			);
+			path = sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +207,9 @@
 				092B3B25296AE86F001E29F0 /* Preview Assets.xcassets in Resources */,
 				091CAFC1296C3137004A4BBD /* Localizable.strings in Resources */,
 				092B3B22296AE86F001E29F0 /* Assets.xcassets in Resources */,
+				09AAD35529FBDCD5008591F0 /* match.wav in Resources */,
+				09AAD35729FBDCEB008591F0 /* fail.mp3 in Resources */,
+				09AAD35929FBDD27008591F0 /* win.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,15 +220,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0912040A296DAA69002FCB09 /* FirstView.swift in Sources */,
+				0912040A296DAA69002FCB09 /* SplashScreen.swift in Sources */,
 				091CAFCF296C4A96004A4BBD /* DraggableColor.swift in Sources */,
 				09279B85296F303800DE4B1B /* ParticelsView.swift in Sources */,
 				091CAFD1296C4AAD004A4BBD /* ObjectContainer.swift in Sources */,
 				091CAFC9296C49FE004A4BBD /* Object.swift in Sources */,
 				09279B89296F426100DE4B1B /* Emitters.swift in Sources */,
+				094EE96D29896D0800F447B0 /* Categories.swift in Sources */,
 				09279B87296F30A000DE4B1B /* ParticlesEmitter.swift in Sources */,
 				091CAFCB296C4A28004A4BBD /* GameViewModel.swift in Sources */,
+				094F7981299F1DDA00319D1C /* ResponsiveNavigationStyle.swift in Sources */,
 				091CAFCD296C4A68004A4BBD /* ObjectsView.swift in Sources */,
+				09A1E1A029C6D7E3006FA811 /* OnboardingView.swift in Sources */,
 				092B3B1E296AE86E001E29F0 /* HueHunterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -323,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -348,12 +380,13 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = demo.HueHunter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -377,12 +410,13 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = demo.HueHunter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

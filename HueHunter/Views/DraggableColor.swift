@@ -20,7 +20,6 @@ struct DraggableColor<Draggable: Gesture>: View {
      
        
         Circle()
-        
             .fill(color.color)
         
             .overlay(
@@ -29,11 +28,12 @@ struct DraggableColor<Draggable: Gesture>: View {
                     .bold()
                    )
             .frame(width: size, height: size)
-            .shadow(radius: 10)
+            .shadow(radius: 8)
         
             .position(position)
             .gesture(gesture).environment(\.layoutDirection, .leftToRight)
-           
+            .offset(x: 0, y: -35)
+       
        
     }
 }
@@ -41,7 +41,7 @@ struct DraggableColor<Draggable: Gesture>: View {
 struct DraggableToy_Previews: PreviewProvider {
     static var previews: some View {
         DraggableColor(
-            color: Object.all.first!,
+            color: Object.sports.first!,
             position: .zero,
             gesture: DragGesture()
            

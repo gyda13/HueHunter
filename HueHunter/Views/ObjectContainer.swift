@@ -15,22 +15,26 @@ struct ObjectContainer: View {
     private let highlightedSize: CGFloat = 130
     
     var body: some View {
-        ZStack{
-            
-            object.image
-                .frame(width: regularSize, height: regularSize)
-                .shadow(radius: 5)
-            if viewModel.isHighlighted(id: object.id) {
-                Circle()
-                    .fill(object.color)
-                    .opacity(0.5)
-                    .frame(
-                        width: highlightedSize,
-                        height: highlightedSize
-                    )
-                
+      
+            ZStack{
+           
+                object.image
+                    .resizable()
+                           .aspectRatio(contentMode: .fill)
+                          .frame(width:100, height: 100)
+                    .shadow(radius: 5)
+                if viewModel.isHighlighted(id: object.id) {
+                    Circle()
+                        .fill(object.color)
+                        .opacity(0.5)
+                        .frame(
+                            width: highlightedSize,
+                            height: highlightedSize
+                        )
+                    
+                }
             }
-        }
+        
             .overlay {
                 GeometryReader { proxy -> Color in
                     viewModel.update(
@@ -48,8 +52,12 @@ struct ObjectContainer: View {
 struct ObjectContainer_Previews: PreviewProvider {
     static var previews: some View {
         ObjectContainer(
-            object: Object.all.first!,
+            object: Object.sports.first!,
             viewModel: GameViewModel()
         )
     }
 }
+
+
+
+

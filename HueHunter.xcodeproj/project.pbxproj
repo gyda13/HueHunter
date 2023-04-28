@@ -99,7 +99,6 @@
 		092B3B11296AE86E001E29F0 = {
 			isa = PBXGroup;
 			children = (
-				09AAD35329FBDCA0008591F0 /* sound */,
 				091CAFC3296C3137004A4BBD /* Localizable.strings */,
 				092B3B1C296AE86E001E29F0 /* HueHunter */,
 				092B3B1B296AE86E001E29F0 /* Products */,
@@ -122,6 +121,7 @@
 				091CAFC5296C49CC004A4BBD /* Model */,
 				092B3B1D296AE86E001E29F0 /* HueHunterApp.swift */,
 				092B3B21296AE86F001E29F0 /* Assets.xcassets */,
+				09AAD35329FBDCA0008591F0 /* sound */,
 				092B3B23296AE86F001E29F0 /* Preview Content */,
 			);
 			path = HueHunter;

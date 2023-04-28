@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 
-
 struct Constants {
     static let height: CGFloat = 230.0
     static let width: CGFloat = UIScreen.main.bounds.width
